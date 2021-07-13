@@ -1,0 +1,38 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+a_acc = np.load('Results/AlexNet_acc.npy')
+r18_acc = np.load('Results/ResNet18_acc.npy')
+r50_acc = np.load('Results/ResNet50_acc.npy')
+
+a_ls = np.load('Results/AlexNet_ls.npy')
+r18_ls = np.load('Results/ResNet18_ls.npy')
+r50_ls = np.load('Results/ResNet50_ls.npy')
+
+plt.clf()
+x = range(len(a_acc))
+plt.plot(x, a_acc, label='AlexNet')
+plt.plot(x, r18_acc, label='ResNet18')
+plt.plot(x, r50_acc, label='ResNet50')
+plt.xlabel('Epochs', fontsize=20)
+plt.ylabel('Testing Accuracy', fontsize=20)
+plt.xticks(size=15)
+plt.yticks(size=15)
+plt.legend(fontsize=15)
+plt.tight_layout()
+plt.savefig('Accuracy.png')
+plt.show()
+
+plt.clf()
+x = range(len(a_acc))
+plt.plot(x, a_ls, label='AlexNet')
+plt.plot(x, r18_ls, label='ResNet18')
+plt.plot(x, r50_ls, label='ResNet50')
+plt.xlabel('Epochs', fontsize=20)
+plt.ylabel('Testing Loss', fontsize=20)
+plt.xticks(size=15)
+plt.yticks(size=15)
+plt.legend(fontsize=15)
+plt.tight_layout()
+plt.savefig('Loss.png')
+plt.show()

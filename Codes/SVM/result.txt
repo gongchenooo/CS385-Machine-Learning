@@ -1,0 +1,24 @@
+Kernel:linear	Decision Function:ovr
+Training Accuracy:	0.8217869087434305
+Testing Accuracy:	0.7759548144163528	0.7759548144163528
+Kernel:linear	Decision Function:ovo
+Training Accuracy:	0.8217869087434305
+Testing Accuracy:	0.7759548144163528	0.7759548144163528
+Kernel:poly	Decision Function:ovr
+Training Accuracy:	0.9820353559483994
+Testing Accuracy:	0.8004303388918773	0.8004303388918773
+Kernel:poly	Decision Function:ovo
+Training Accuracy:	0.9820353559483994
+Testing Accuracy:	0.8004303388918773	0.8004303388918773
+Kernel:rbf	Decision Function:ovr
+Training Accuracy:	0.892403248924988
+Testing Accuracy:	0.7977407208176439	0.7977407208176439
+Kernel:rbf	Decision Function:ovo
+Training Accuracy:	0.892403248924988
+Testing Accuracy:	0.7977407208176439	0.7977407208176439
+Kernel:sigmoid	Decision Function:ovr
+Training Accuracy:	0.6830387004300048
+Testing Accuracy:	0.6861215707369553	0.6861215707369553
+Kernel:sigmoid	Decision Function:ovo
+Training Accuracy:	0.6830387004300048
+Testing Accuracy:	0.6861215707369553	0.6861215707369553
